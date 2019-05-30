@@ -15,7 +15,6 @@ echo
 if [ $(uname) = "Linux" ]
 then
 cat /proc/cpuinfo| grep 'model name'
-#echo Hi
 else
 echo 'CPU model name: ' $(sysctl -n machdep.cpu.brand_string)
 fi
