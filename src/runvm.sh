@@ -21,8 +21,8 @@ then
     /Applications/VMware\ Fusion.app/Contents/Library/vmrun list
 elif [ "$1" == "--stop" ] || [ "$1" == "-s" ]
 then
-    echo "Stopping " $1"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion stop "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$1".vmwarevm" nogui
+    echo "Stopping " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion stop "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 elif [ "$1" == "--run" ] || [ "$1" == "-r" ]
 then
-    echo "Starting " $1"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$1".vmwarevm" nogui
+    echo "Starting " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 fi
