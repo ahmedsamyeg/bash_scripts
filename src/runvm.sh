@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #
 #   Copyrights (c) 2019 Ahmed Elsayed
 #
@@ -25,21 +24,20 @@ then
     /Applications/VMware\ Fusion.app/Contents/Library/vmrun list
 elif [ "$1" == "--stop" ] || [ "$1" == "-s" ]
 then
-    echo "Stopping " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion stop "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
+    echo "Stopping "$2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion stop "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 elif [ "$1" == "--run" ] || [ "$1" == "-r" ]
 then
-    echo "Starting " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
+    echo "Starting "$2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 elif [ "$1" == "--suspend" ] || [ "$1" == "-d" ]
 then
-    echo "Suspending " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion suspend "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
+    echo "Suspending "$2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion suspend "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 elif [ "$1" == "--pause" ] || [ "$1" == "-p" ]
 then
-    echo "Pausing " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion pause "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
+    echo "Pausing "$2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion pause "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 elif [ "$1" == "--unpause" ] || [ "$1" == "-u" ]
 then
-    echo "Unpausing " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion unpause "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
+    echo "Unpausing "$2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion unpause "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 elif [ "$1" == "--reset" ]
 then
-    echo "Resetting " $2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion reset "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
-then
+    echo "Resetting "$2"....." & /Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion reset "/Users/ahmedsamy/Documents/Virtual Machines.localized/"$2".vmwarevm" nogui
 fi
